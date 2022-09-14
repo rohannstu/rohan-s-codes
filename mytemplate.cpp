@@ -30,27 +30,31 @@ LLI add(LLI a, LLI b){return mod(mod(a)+mod(b));}
 LLI mul(LLI a, LLI b){ return mod(mod(a)*mod(b));}
 //bit manipulation 
 int countsetbits(LLI n){LLI cnt=0;  while(n){cnt+=(n&1);  n=n>>1;  }return cnt; }
+int getBit(int n,int pos){ return ((n&(1<<pos))!=0); }
+int setBit(int n,int pos){ return (n | (1<<pos)); }
+int clearBit(int n,int pos){ int mask=~(1<<pos); return (n&mask); }
+/*--------------------------------------------------------------------------*/
 int pow(int a, int b){if(b==0) return 1;int ret = pow(a,b/2);ret *= ret; if(b&1) ret *= a; return ret; }
 #define debug(x) cout<<":["<<x<<"XE]"<<endl;
 #define debug2(x,y) cout<<":["<<x<<" "<<y<<"XE]"<<endl;
 /*----------------------------------------------------------------------*/
 void solve() 
 {
-   
-
 }
+
+
 
 signed main()
 {
     ios_base::sync_with_stdio(0); 
     cin.tie(0);
     cout.tie(0);  
-    LLI tc; cin >> tc;  
-    cin.ignore();
-    for (LLI i = 1; i <= tc; i++)
-    {
-        //cout << "Case " << i << ": ";
-        solve(); 
-    }
-    //solve();
+    // LLI tc; cin >> tc;  
+    // cin.ignore();
+    // for (LLI i = 1; i <= tc; i++)
+    // {
+    //     //cout << "Case " << i << ": ";
+    //     solve(); 
+    // }
+    solve();
 }
