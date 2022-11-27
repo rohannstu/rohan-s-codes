@@ -8,7 +8,7 @@ using namespace std;
 #define pb(x) push_back(x)
 #define ppb pop_back()
 #define nl "\n"
-#define vec(a) vector<LLI>a
+#define vec(a) vector<ll>a
 #define yes     cout<<"YES"<<nl; 
 #define no      cout<<"NO"<<nl; 
 #define f(i, f, l) for (ll i = f; i < l; i++)
@@ -34,7 +34,7 @@ int getBit(int n,int pos){ return ((n&(1<<pos))!=0); }
 int setBit(int n,int pos){ return (n | (1<<pos)); }
 int clearBit(int n,int pos){ int mask=~(1<<pos); return (n&mask); }
 /*--------------------------------------------------------------------------*/
-int pow(int a, int b){if(b==0) return 1;int ret = pow(a,b/2);ret *= ret; if(b&1) ret *= a; return ret; }
+int Pow(int a, int b){if(b==0) return 1;int ret = Pow(a,b/2);ret *= ret; if(b&1) ret *= a; return ret; }
 #define debug(x) cout<<":["<<x<<"XE]"<<endl;
 #define debug2(x,y) cout<<":["<<x<<" "<<y<<"XE]"<<endl;
 /*----------------------------------------------------------------------*/
